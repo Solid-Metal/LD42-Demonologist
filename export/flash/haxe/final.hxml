@@ -1,0 +1,29 @@
+-main ApplicationMain 
+-cp D:/Program Files/HaxeToolkit/haxe/lib/flixel/4,4,2
+-D flixel=4.4.2
+--macro openfl._internal.utils.ExtraParams.include()
+-cp D:/Program Files/HaxeToolkit/haxe/lib/openfl/8,3,0/src
+-D openfl=8.3.0
+--macro lime.Lib.extraParams()
+-cp D:/Program Files/HaxeToolkit/haxe/lib/lime/6,4,0
+-D lime=6.4.0
+--macro keep('IntIterator')
+-cp D:/Program Files/HaxeToolkit/haxe/lib/hscript/2,2,0
+-D hscript=2.2.0
+-cp source
+-cp D:/Program Files/HaxeToolkit/haxe/lib/openfl/8,3,0/src/externs/core/flash
+-cp D:/Program Files/HaxeToolkit/haxe/lib/openfl/8,3,0/src/externs/core/openfl
+-D native-trace
+-D tools=6.4.0
+-D flash-use-stage
+-D no-compilation
+-D openfl-flash
+-D fdb
+-D web
+--macro flixel.system.macros.FlxDefines.run()
+-cp export/flash
+-swf-lib obj/assets.swf
+-swf-version 11.8
+-swf export/flash/bin/VSCodeTest.swf
+-cp export/flash/haxe
+-D final

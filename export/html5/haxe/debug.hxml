@@ -1,0 +1,30 @@
+-main ApplicationMain 
+-cp D:/Program Files/HaxeToolkit/haxe/lib/flixel/4,4,2
+-D flixel=4.4.2
+--macro openfl._internal.utils.ExtraParams.include()
+-cp D:/Program Files/HaxeToolkit/haxe/lib/openfl/8,3,0/src
+-D openfl=8.3.0
+--macro lime.Lib.extraParams()
+-cp D:/Program Files/HaxeToolkit/haxe/lib/lime/6,4,0
+-D lime=6.4.0
+--macro keep('IntIterator')
+-cp D:/Program Files/HaxeToolkit/haxe/lib/hscript/2,2,0
+-D hscript=2.2.0
+-cp source
+-D tools=6.4.0
+-D howlerjs
+-D no-compilation
+-D lime-opengl
+-D openfl-html5
+-D NAPE_RELEASE_BUILD
+-D lime-html5
+-D html5
+-D web
+--remap flash:openfl
+--macro flixel.system.macros.FlxDefines.run()
+--connect
+6000
+-js export/html5/bin/LDJam42.js
+-cp export/html5/haxe
+-D html5
+-debug
